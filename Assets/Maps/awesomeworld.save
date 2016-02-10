@@ -1,0 +1,81 @@
+
+<SaveFile>
+   <block id = "b14">
+      <type>NormalBlock</type>
+      <x>-8</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b15">
+      <type>NormalBlock</type>
+      <x>-6.5</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b16">
+      <type>SpikeBlock</type>
+      <x>-5</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b17">
+      <type>SpikeBlock</type>
+      <x>-3.5</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b18">
+      <type>SpikeBlock</type>
+      <x>-2</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b19">
+      <type>NormalBlock</type>
+      <x>-0.5</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b20">
+      <type>NormalBlock</type>
+      <x>1</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b21">
+      <type>NormalBlock</type>
+      <x>2.5</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b22">
+      <type>NormalBlock</type>
+      <x>-9.5</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b23">
+      <type>NormalBlock</type>
+      <x>-11</x>
+      <y>0.5</y>
+   </block>
+   <block id = "b24">
+      <type>NormalBlock</type>
+      <x>4</x>
+      <y>0.5</y>
+   </block>
+   <player2>
+      <x>4</x>
+      <y>2</y>
+   </player2>
+   <player1>
+      <x>-11</x>
+      <y>2</y>
+   </player1>
+   <block id = "b25">
+      <type>CloudBlockTemp</type>
+      <x>4.75</x>
+      <y>6.5</y>
+   </block>
+   <block id = "b26">
+      <type>CloudBlockTemp</type>
+      <x>-4.25</x>
+      <y>6.5</y>
+   </block>
+   <block id = "b27">
+      <type>CloudBlockTemp</type>
+      <x>-10.25</x>
+      <y>6.5</y>
+   </block>
+</SaveFile>

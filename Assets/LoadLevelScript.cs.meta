@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 045eb26732b8c8343b890d144cf0f463
+timeCreated: 1454310593
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - BreakableBlock: {instanceID: 0}
+  - CloudBlock: {instanceID: 0}
+  - IceBlock: {instanceID: 0}
+  - JumpBlock: {instanceID: 0}
+  - LavaBlock: {instanceID: 0}
+  - MovingPlatform: {instanceID: 0}
+  - NormalBlock: {instanceID: 0}
+  - SpikeBlock: {instanceID: 0}
+  - Player1: {instanceID: 0}
+  - Player2: {fileID: 150146, guid: 1398993dbff09574889bd49396e8c788, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
