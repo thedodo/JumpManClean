@@ -46,8 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BackgroundPlane.cs" />
+     <Compile Include="Assets\CreateNewMapButton.cs" />
      <Compile Include="Assets\CreateWorldButton.cs" />
+     <Compile Include="Assets\ExitButton.cs" />
+     <Compile Include="Assets\LevelManager.cs" />
      <Compile Include="Assets\LoadLevelScript.cs" />
+     <Compile Include="Assets\LoadMapButton.cs" />
      <Compile Include="Assets\MapCreatorManager.cs" />
      <Compile Include="Assets\SaveButton.cs" />
      <Compile Include="Assets\Scripts\Blocks\Blocks.cs" />
@@ -57,6 +62,7 @@
      <Compile Include="Assets\Scripts\Blocks\IceBlockScript.cs" />
      <Compile Include="Assets\Scripts\Blocks\LavaBlockScript.cs" />
      <Compile Include="Assets\Scripts\Blocks\SpikeBlockScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Marker\BreakableBlockMarker.cs" />
      <Compile Include="Assets\Scripts\Marker\CloudBlockMarker.cs" />
      <Compile Include="Assets\Scripts\Marker\IceBlockMarker.cs" />

@@ -20,7 +20,8 @@ public class EmptyBoxScript : MonoBehaviour {
 	{
 		float yCoord = this.transform.position.y;
 		float xCoord = this.transform.position.x;
-		MapCreatorManager.Instance.TellGmWhatPosition (xCoord, yCoord);
+        float zCoord = this.transform.position.z;
+		MapCreatorManager.Instance.TellGmWhatPosition (xCoord, yCoord, zCoord);
 
 
 	}

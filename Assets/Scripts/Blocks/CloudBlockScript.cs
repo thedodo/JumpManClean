@@ -6,8 +6,8 @@ public class CloudBlockScript : MonoBehaviour {
 	public string playerName1 = "Player(Clone)";
 	public string playerName2 = "Player2(Clone)";
 	public string name = "CloudBlock";
-	private GameObject player1;
-	private GameObject player2;
+	public GameObject player1;
+	public GameObject player2;
 	private bool colliderEnabled = true;
 	
 	//Find player by name

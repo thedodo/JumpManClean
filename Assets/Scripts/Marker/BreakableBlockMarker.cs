@@ -17,7 +17,7 @@ namespace Assets.Scripts.Markers
 	
 		}
 
-		void OnMouseDown () 
+		public void OnMouseDown () 
 		{
 			MapCreatorManager.Instance.TellGmWhatMarker (BreakableBlockPrefab);
 			Debug.Log ("HERE");

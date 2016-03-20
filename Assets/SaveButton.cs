@@ -12,7 +12,6 @@ public class SaveButton : MonoBehaviour {
 	private bool bShow = false;
 	private string saveFileName = "";
 	private string savePath = Application.dataPath+"/Maps/";
-	private string w3kHead = "<?xml version=\"1.0\"?>";
 	private StreamWriter writer;
 	private int blockCounter = 0;
 
@@ -59,7 +58,6 @@ public class SaveButton : MonoBehaviour {
 
 		//fStream.Write (byteData,0,byteData.Length);
 		using (writer = new StreamWriter (Application.dataPath+"/Maps/" + saveFileName + ".save")) {
-			writer.WriteLine (w3kHead);
 			writer.WriteLine("<SaveFile>");
 	
 
@@ -121,7 +119,7 @@ public class SaveButton : MonoBehaviour {
 	}
 
 	
-	void OnMouseDown () 
+	public void OnMouseDown () 
 	{
 		bShow = true;
 

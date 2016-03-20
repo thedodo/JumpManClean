@@ -97,7 +97,7 @@ namespace Assets.Scripts
 		}
 		
 		
-		public void TellGmWhatPosition(float xCoord, float yCoord)
+		public void TellGmWhatPosition(float xCoord, float yCoord, float zCoord)
 		{
 			if (currGO != null) 
 			{
@@ -115,16 +115,16 @@ namespace Assets.Scripts
 
 
 
-				Vector2 position;
+				Vector3 position;
 				if(currGO.tag == "CloudBlock")
 				{
 					if(xCoord == 11.5f)
 					{
-						position = new Vector2 (xCoord-0.75f, yCoord);
+						position = new Vector3 (xCoord-0.75f, yCoord, zCoord);
 					}
 					else
 					{
-						position = new Vector2 (xCoord+0.75f, yCoord);
+						position = new Vector3 (xCoord+0.75f, yCoord, zCoord);
 					}
 				}
 
@@ -141,7 +141,7 @@ namespace Assets.Scripts
 					}
 
 
-					position = new Vector2 (xCoord, yCoord);
+					position = new Vector3 (xCoord, yCoord, zCoord);
 				}
 
 

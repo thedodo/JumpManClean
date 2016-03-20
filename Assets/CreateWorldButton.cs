@@ -2,6 +2,7 @@
 using System.Collections;
 using Assets.Scripts;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 
 public class CreateWorldButton : MonoBehaviour {
@@ -15,7 +16,7 @@ public class CreateWorldButton : MonoBehaviour {
 	void Update () {
 	}
 
-	void OnMouseDown () 
+	public void OnMouseDown () 
 	{
 		Dictionary<Vector2, GameObject> prefabDic = MapCreatorManager.Instance.getMapPrefabDic ();
 		foreach (KeyValuePair<Vector2, GameObject> pair in prefabDic)
@@ -23,6 +24,6 @@ public class CreateWorldButton : MonoBehaviour {
 			Debug.Log(pair.Key + " " + pair.Value);
 			DontDestroyOnLoad(pair.Value);
 		}
-		Application.LoadLevel("EmptyScene");
+        SceneManager.LoadScene("EmptyScene");
 	}
 }
