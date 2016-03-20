@@ -26,10 +26,10 @@ namespace Assets.Scripts
 		private bool p2Placed = false;
 
 		public static MapCreatorManager instance = new MapCreatorManager ();
-		Dictionary<Vector2, GameObject> mapPrefabsDic = new Dictionary<Vector2, GameObject>();
+		Dictionary<Vector3, GameObject> mapPrefabsDic = new Dictionary<Vector3, GameObject>();
 
 
-		public Dictionary<Vector2, GameObject> getMapPrefabDic()
+		public Dictionary<Vector3, GameObject> getMapPrefabDic()
 		{
 			return mapPrefabsDic;
 		}
@@ -38,6 +38,7 @@ namespace Assets.Scripts
 		{
 		}
 		
+        //Singleton!
 		public static MapCreatorManager Instance
 		{
 			get
@@ -61,11 +62,13 @@ namespace Assets.Scripts
 			currGO = prefab;
 		}
 
+
+        //SLOW: WHY ITERATE OVER WHOLE MAP TO GET PLAYER?? FLAG!
 		public void removePlayerFirst(int player)
 		{
 			if (player == 1) 
 			{
-				foreach (KeyValuePair<Vector2, GameObject> pair in mapPrefabsDic)
+				foreach (KeyValuePair<Vector3, GameObject> pair in mapPrefabsDic)
 				{
 					GameObject go;
 					mapPrefabsDic.TryGetValue(pair.Key, out go);
@@ -80,7 +83,7 @@ namespace Assets.Scripts
 
 			if (player == 2) 
 			{
-				foreach (KeyValuePair<Vector2, GameObject> pair in mapPrefabsDic)
+				foreach (KeyValuePair<Vector3, GameObject> pair in mapPrefabsDic)
 				{
 					GameObject go;
 					mapPrefabsDic.TryGetValue(pair.Key, out go);
@@ -142,34 +145,32 @@ namespace Assets.Scripts
 
 
 					position = new Vector3 (xCoord, yCoord, zCoord);
-				}
+
+                }
 
 
 				GameObject clone = (GameObject)MonoBehaviour.Instantiate (currGO, position, Quaternion.identity);
 
-				if(!mapPrefabsDic.ContainsKey(position))
+                Vector3 scale = new Vector3(clone.transform.localScale.x * 3, clone.transform.localScale.y * 3 , clone.transform.localScale.z);
+                clone.transform.localScale = scale;
+
+
+                if (!mapPrefabsDic.ContainsKey(position))
 				{
 					mapPrefabsDic.Add(position, clone);
-
 				}
+
 				else
 				{
 					GameObject go;
 					mapPrefabsDic.TryGetValue(position, out go);
-					go.SetActive(false);
 					UnityEngine.Object.Destroy(go);
 
 					mapPrefabsDic.Remove(position);
 					mapPrefabsDic.Add(position,clone);
 				}
-
-
 			}
 		}
-
-
-
-
 	}
 }
 

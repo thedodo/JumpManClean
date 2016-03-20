@@ -18,8 +18,8 @@ public class CreateWorldButton : MonoBehaviour {
 
 	public void OnMouseDown () 
 	{
-		Dictionary<Vector2, GameObject> prefabDic = MapCreatorManager.Instance.getMapPrefabDic ();
-		foreach (KeyValuePair<Vector2, GameObject> pair in prefabDic)
+		Dictionary<Vector3, GameObject> prefabDic = MapCreatorManager.Instance.getMapPrefabDic ();
+		foreach (KeyValuePair<Vector3, GameObject> pair in prefabDic)
 		{
 			Debug.Log(pair.Key + " " + pair.Value);
 			DontDestroyOnLoad(pair.Value);

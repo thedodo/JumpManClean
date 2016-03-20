@@ -61,8 +61,8 @@ public class SaveButton : MonoBehaviour {
 			writer.WriteLine("<SaveFile>");
 	
 
-		Dictionary<Vector2, GameObject> prefabDic = MapCreatorManager.Instance.getMapPrefabDic ();
-		foreach (KeyValuePair<Vector2, GameObject> pair in prefabDic)
+		Dictionary<Vector3, GameObject> prefabDic = MapCreatorManager.Instance.getMapPrefabDic ();
+		foreach (KeyValuePair<Vector3, GameObject> pair in prefabDic)
 		{
 			if(! (pair.Value.tag == "Player1" || pair.Value.tag == "Player2"))
 			{
@@ -73,13 +73,15 @@ public class SaveButton : MonoBehaviour {
 				string type = "      <type>"+blockname+"</type>";
 				string x = "      <x>"+pair.Key.x.ToString()+"</x>";
 				string y = "      <y>"+pair.Key.y.ToString()+"</y>";
-				
-				writer.WriteLine(blockid);
+                string z = "      <z>" + pair.Key.z.ToString() + "</z>";
+
+                writer.WriteLine(blockid);
 				blockCounter++;
 				writer.WriteLine(type);
 				writer.WriteLine(x);
 				writer.WriteLine (y);
-				writer.WriteLine("   </block>");
+                writer.WriteLine(z);
+                writer.WriteLine("   </block>");
 
 				//string prefabName = pair.Value.name;
 				//Debug.Log(pair.Key + " " + pair.Value);
