@@ -1,0 +1,58 @@
+<SaveFile>
+   <block id = "b0">
+      <type>NormalBlock</type>
+      <x>-33.09636</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b1">
+      <type>NormalBlock</type>
+      <x>-28.59636</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b2">
+      <type>NormalBlock</type>
+      <x>-24.09636</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b3">
+      <type>NormalBlock</type>
+      <x>-19.59636</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b4">
+      <type>NormalBlock</type>
+      <x>-15.09636</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b5">
+      <type>NormalBlock</type>
+      <x>-10.59636</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b6">
+      <type>NormalBlock</type>
+      <x>-6.096359</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <block id = "b7">
+      <type>NormalBlock</type>
+      <x>-1.596359</x>
+      <y>-17.29899</y>
+      <z>51.39844</z>
+   </block>
+   <player1>
+      <x>-33.09636</x>
+      <y>-12.79899</y>
+   </player1>
+   <player2>
+      <x>-1.596359</x>
+      <y>-12.79899</y>
+   </player2>
+</SaveFile>

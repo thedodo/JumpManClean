@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player2Script : MonoBehaviour {
 	
@@ -66,7 +67,7 @@ public class Player2Script : MonoBehaviour {
 		
 		if (score2 == 10) 
 		{
-			Application.LoadLevel("Player2Won");
+            SceneManager.LoadScene("Player2Won");
 		}
 	}
 	

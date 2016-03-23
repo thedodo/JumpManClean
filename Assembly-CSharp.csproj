@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AudioManager.cs" />
      <Compile Include="Assets\BackgroundPlane.cs" />
      <Compile Include="Assets\CreateNewMapButton.cs" />
      <Compile Include="Assets\CreateWorldButton.cs" />
@@ -53,6 +54,8 @@
      <Compile Include="Assets\LoadLevelScript.cs" />
      <Compile Include="Assets\LoadMapButton.cs" />
      <Compile Include="Assets\MapCreatorManager.cs" />
+     <Compile Include="Assets\Player1Audio.cs" />
+     <Compile Include="Assets\Player2Audio.cs" />
      <Compile Include="Assets\SaveButton.cs" />
      <Compile Include="Assets\Scripts\Blocks\Blocks.cs" />
      <Compile Include="Assets\Scripts\Blocks\BreakableBlockScript.cs" />
@@ -74,6 +77,7 @@
      <Compile Include="Assets\Scripts\PlayAgainButton.cs" />
      <Compile Include="Assets\Scripts\Player1Script.cs" />
      <Compile Include="Assets\Scripts\Player2Script.cs" />
+     <Compile Include="Assets\Scripts\Utils\FallDeath.cs" />
      <Compile Include="Assets\Scripts\Utils\UIManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

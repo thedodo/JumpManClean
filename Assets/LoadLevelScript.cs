@@ -25,15 +25,15 @@ public class LoadLevelScript : MonoBehaviour {
 		Dictionary<Vector3, GameObject> prefabDic = MapCreatorManager.Instance.getMapPrefabDic ();
 		foreach (KeyValuePair<Vector3, GameObject> pair in prefabDic)
 		{
+
 			if(pair.Value.tag == "Player1")
 			{
 				GameObject player1 = (GameObject)Instantiate(Player1, pair.Key, Quaternion.identity);
 				UnityEngine.Object.Destroy(pair.Value);
                 Vector3 scale = new Vector3(player1.transform.localScale.x * 3, player1.transform.localScale.y * 3, player1.transform.localScale.z);
                 player1.transform.localScale = scale;
-
-
             }
+
 
             if (pair.Value.tag == "Player2")
 			{
@@ -41,27 +41,27 @@ public class LoadLevelScript : MonoBehaviour {
                 UnityEngine.Object.Destroy(pair.Value);
                 Vector3 scale = new Vector3(player2.transform.localScale.x * 3, player2.transform.localScale.y * 3, player2.transform.localScale.z);
                 player2.transform.localScale = scale;
-
-
             }
+
 
 			if(pair.Value.tag == "CloudBlock")
 			{
-				Instantiate(CloudBlock,pair.Key,Quaternion.identity);
+				GameObject cloudblock = (GameObject)Instantiate(CloudBlock,pair.Key,Quaternion.identity);
 				UnityEngine.Object.Destroy(pair.Value);
+                Vector3 scale = new Vector3(cloudblock.transform.localScale.x * 3, cloudblock.transform.localScale.y * 3, cloudblock.transform.localScale.z);
+                cloudblock.transform.localScale = scale;
+            }
 
-
-			}
 
 			if(pair.Value.tag == "BreakableBlock")
 			{
-				Instantiate(BreakableBlock,pair.Key,Quaternion.identity);
+				GameObject breakableblock = (GameObject)Instantiate(BreakableBlock,pair.Key,Quaternion.identity);
 				UnityEngine.Object.Destroy(pair.Value);
-				
-			}
+                Vector3 scale = new Vector3(breakableblock.transform.localScale.x * 3, breakableblock.transform.localScale.y * 3, breakableblock.transform.localScale.z);
+                breakableblock.transform.localScale = scale;
+            }
 
 		}
-	
 	}
 
 	void OnLevelWasLoaded(int level) {
